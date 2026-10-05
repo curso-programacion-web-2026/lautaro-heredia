@@ -1,30 +1,122 @@
 body {
-        background-color: rgb(19, 145, 177);
+        background-color: rgb(97, 3, 3);
         font-family:Arial, sans-serif;
 }
 
 h1 {  
-    color:rgb(18, 51, 100);
+    color:rgb(97, 3, 3);
     font: size 35px;
     text-align:center;
 }
+.navbar {
+background-color: rgb(68, 15, 15);
+font-family: Arial, sans-serif;
+}
+
+.menu{
+    background-color: rgb(42, 3, 87);
+    padding: 0px;
+}
+
+.menu-principal {
+display: flex;
+list-style: none;
+gap: 10px;
+padding: 0 15px;
+}
+
+.menu-principal > li > a {
+display: block;
+color: rgb(245, 240, 240)
+text-decoration: none;
+padding: 18px 20px;
+font-weight: bold;
+transition: background-color 0.3s;
+}
+
+.menu-principal > li > a:hover {
+background-color: #6916c9;
+}
+
+.dropdown {
+position: relative;
+}
+.submenu {
+position: absolute;
+top: 150%;
+left: 0;
+background-color: #7a40b9;
+list-style: none;
+box-shadow: 0px 8px 16px rgba(63, 4, 4, 0.3);
+border-radius: 0 0 8px 8px;
+overflow: hidden;
+
+display: none;
+}
+
+.submenu li a {
+display: block;
+color: rgb(253, 246, 246)
+text-decoration: none;
+padding: 12px 20px;
+font-size: 14px;
+}
+
+.submenu li a:hover {
+background-color: #ffffff;
+padding-left: 25px;
+}
+.dropdown:hover .submenu {
+display: block;
+}
 
 h2 {
-    color: rgb(37, 25, 92);
+    color: rgb(97, 3, 3);
     font-size: 30px;
 }
 
 h3 {
-    color: rgb(37, 25, 92);
+    color: rgb(97, 3, 3);
     font-size: 30px;
 }
 
 h4 {
-    color: rgb(37, 25, 92) ;
+    color: rgb(97, 3, 3) ;
     font-size: 30px;
 }
 
+h5{                    
+    color: rgb(97, 3, 3);
+    font-size: 30px;
+}
 .destacado {
-    color: rgba(2, 0, 0, 0.877);
+    color: rgba(2, 2, 2, 0.877);
     font-weight: bold;
 }
+
+#sobre-mi {
+background-color: hsl(268, 46%, 42%);
+color: rgb(102, 5, 5);
+}
+
+img {
+    width: 280px;
+}
+
+section {
+background-color: rgb(115, 196, 48);
+padding: 20px;
+margin: 30px;
+border: 2px solid black;
+}
+
+
+body {
+/* Ruta de la imagen*/
+background-image: url('Diseno-sin-titulo-89.jpg');
+background-position: center;
+background-size: cover;
+}
+
+background-color: #1b2a4a;
+font-family: Ari
