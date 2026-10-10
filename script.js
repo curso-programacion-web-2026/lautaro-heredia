@@ -45,12 +45,7 @@ formulario.addEventListener("submit", function(event) {
     }
     if (ciudad === "cordoba") {
         console.log("La ciudad es Córdoba");
-    }
-    if (hora < 10) {
-        console.log("buenos dias");
-    } else if (hora < 16) {
-        console.log("buenas tardes");
-    } else if (hora < 20) {
-        console.log("buenas noches");
-    }
+    }s
 });
+
+
