@@ -1,0 +1,31 @@
+
+body {
+background-color: #32539b;
+font-family: Arial;
+}
+form{
+     color:rgb(234, 235, 236);
+    font: size 30px;
+    text-align:center;
+    width: 100%;
+    align-items: center;
+}
+
+.contenedor {
+width: 40px;
+margin: 30px auto;
+}
+form {
+display: flex;
+flex-direction:column;
+}
+input,
+
+textarea {
+margin-bottom: 10px;
+padding: 20px;
+}
+button {
+padding: 30px;
+margin-top: 30px;
+}
