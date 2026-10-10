@@ -3,6 +3,35 @@ body {
         font-family:Arial, sans-serif;
 }
 
+formulario
+body {
+font-family: Arial;
+}
+{
+     color:blue;
+    font: size 35px;
+    text-align:center;
+}
+
+.contenedor {
+width: 40px;
+margin: 30px auto;
+}
+form {
+display: flex;
+flex-direction:column;
+}
+input,
+
+textarea {
+margin-bottom: 6px;
+padding: 12px;
+}
+button {
+padding: 30px;
+margin-top: 30px;
+}
+
 h1 {  
     color:rgb(97, 3, 3);
     font: size 35px;
@@ -113,10 +142,12 @@ border: 2px solid black;
 
 body {
 /* Ruta de la imagen*/
+
 background-image: url('Diseno-sin-titulo-89.jpg');
 background-position: center;
 background-size: cover;
 }
+
 
 background-color: #1b2a4a;
 font-family: Ari
