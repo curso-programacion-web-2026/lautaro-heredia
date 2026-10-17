@@ -47,5 +47,43 @@ formulario.addEventListener("submit", function(event) {
         console.log("La ciudad es Córdoba");
     }s
 });
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const carrouselContainer = document.getElementById('carrousel');
 
+let currentSlide = 0;
+let autoSlideInterval;
 
+//Funcion para mostrar un slide especifico
+function showSlide(index) {
+    if (slides.length === 0) return;
+
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    //Quitar la clase active de todos los slides
+    slides.forEach(slide => slide.classList.remove('active'));
+
+    //Activar el slide
+    slides[currentSlide].classList.add('active');
+}
+
+// Avanzar al siguiente slide
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+//Avanzar al anterior
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+// Event Listeners para botones de navegarción
+if (nextBtn) nextBtn.addEventListener('click',nextSlide);
+if (prevBtn) prevBtn.addEventListener('click',prevSlide);
